@@ -1,0 +1,81 @@
+.frame {
+    margin: auto;
+}
+
+.container.grid-container .block,
+.container.grid-cols .block {
+    display: inline-block;
+    text-align: center;=:middle;
+    width: 100px;
+    height: 100px;
+    vertical-align: bottom;
+}
+
+.container.grid-container .block-selected {
+    background-color: blue;
+    box-shadow: 0 0 5px blue;
+}
+
+.container.grid-container .block-default:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.07);
+}
+
+.container.grid-container .block.block-sign {
+}
+
+.container.grid-container {
+    height: auto;
+    margin: 0 4px 4px 0;
+}
+
+.container.grid-container .block.block-default {
+transition: 0.10s background-color;}
+
+.hidden {
+    visibility: hidden;
+}
+
+.container.grid-container .block.correct-answer {
+    background-color: lime;
+}
+
+.container.grid-container .block.wrong-answer {
+    background-color: red;
+}
+
+span#task-span {
+    font: normal 30px/53px Lato, Helvetica, Lao Ui, Arial sans-serif;
+}
+
+span#task-span.correct-answer {
+    text-shadow: 0 0 5px lime;
+}
+
+span#task-span.wrong-answer {
+    text-shadow: 0 0 5px red;
+}
+
+
+.container.task {
+    position: absolute;
+    top: 273px;
+    left: 122px;
+    opacity: 0.7;
+    text-shadow: 0 0 11px #00F;
+}
+
+.container.grid-cols .block.block-sign p {
+margin: 0 10px 0 0;}
+
+.block.block-sign {
+    margin: 25px 0px -49px 0;
+}
+
+.block.block-sign {
+    font: normal 15px/24px Lato, Helvetica, Lao Ui, Arial sans-serif;
+}
+
+span#task-span {
+    display: block;
+    text-align: center;
+}

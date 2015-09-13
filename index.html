@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>int ger falls v0.0.1</title>
+        <script src="js/jquery-1.11.3.js"></script>
+        <link rel="stylesheet" href="css/style.css"/>
+    </head>
+    <body>
+        <div class="frame header-frame">
+
+        </div>
+
+        <div class="frame game-frame">
+            <div class="container task">
+                <span id="task-span">Press [space] to begin the game!</span>
+                <span id="previous-round"></span>
+            </div>
+            <div class="container grid-cols">
+                <div class="block block-sign"><p>.</p></div>
+                <div class="block block-sign"><p>1. Nominativ</p></div>
+                <div class="block block-sign"><p>2. Genitiv</p></div>
+                <div class="block block-sign"><p>3. Dativ</p></div>
+                <div class="block block-sign"><p>4. Akkusativ</p></div>
+            </div>
+            <div class="container grid-container" data-gender="m">
+                <div class="block block-sign">m</div>
+                <div class="block block-default" data-fall="nominativ">
+                    <img class="hidden" src="img/der.jpg" data-preposition="der"/>
+                </div>
+                <div class="block block-default" data-fall="genitiv">
+                    <img class="hidden" src="img/des.jpg" data-preposition="des"/>
+                </div>
+                <div class="block block-default" data-fall="dativ">
+                    <img class="hidden" src="img/dem.jpg" data-preposition="dem"/>
+                </div>
+                <div class="block block-default" data-fall="akkusativ">
+                    <img class="hidden" src="img/den.jpg" data-preposition="den"/>
+                </div>
+            </div>
+            <div class="container grid-container" data-gender="v">
+                <div class="block block-sign">v</div>
+                <div class="block block-selected" data-fall="nominativ">
+                    <img class="hidden" src="img/die.jpg" data-preposition="die"/>
+                </div>
+                <div class="block block-default" data-fall="genitiv">
+                    <img class="hidden" src="img/der.jpg" data-preposition="der"/>
+                </div>
+                <div class="block block-default" data-fall="dativ">
+                    <img class="hidden" src="img/der.jpg" data-preposition="der"/>
+                </div>
+                <div class="block block-default" data-fall="akkusativ">
+                    <img class="hidden" src="img/die.jpg" data-preposition="die"/>
+                </div>
+            </div>
+            <div class="container grid-container" data-gender="o">
+                <div class="block block-sign">o</div>
+                <div class="block block-default" data-fall="nominativ">
+                    <img class="hidden" src="img/das.jpg" data-preposition="das"/>
+                </div>
+                <div class="block block-default" data-fall="genitiv">
+                    <img class="hidden" src="img/des.jpg" data-preposition="des"/>
+                </div>
+                <div class="block block-default" data-fall="dativ">
+                    <img class="hidden" src="img/dem.jpg" data-preposition="dem"/>
+                </div>
+                <div class="block block-default" data-fall="akkusativ">
+                    <img class="hidden" src="img/das.jpg" data-preposition="das"/>
+                </div>
+            </div>
+            <div class="container grid-container" data-gender="mv">
+                <div class="block block-sign">mv</div>
+                <div class="block block-default" data-fall="nominativ">
+                    <img class="hidden" src="img/die.jpg" data-preposition="die"/>
+                </div>
+                <div class="block block-default" data-fall="genitiv">
+                    <img class="hidden" src="img/der.jpg" data-preposition="der"/>
+                </div>
+                <div class="block block-default" data-fall="dativ">
+                    <img class="hidden" src="img/den.jpg" data-preposition="den"/>
+                </div>
+                <div class="block block-default" data-fall="akkusativ">
+                    <img class="hidden" src="img/die.jpg" data-preposition="die"/>
+                </div>
+            </div>
+        </div>
+
+        <div class="frame footer-frame">
+
+        </div>
+        <script src="js/game.js"></script>
+    </body>
+</html>
